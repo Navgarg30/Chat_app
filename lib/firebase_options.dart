@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -50,20 +47,30 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyB37aSzQwR_RJatCxy9F7V5hcxSvy1pWqc',
-    appId: '1:867907366273:android:03f3e5c37621ae01cf0c80',
-    messagingSenderId: '867907366273',
-    projectId: 'whatsapp-backend-c4d7f',
-    storageBucket: 'whatsapp-backend-c4d7f.appspot.com',
+    apiKey: 'AIzaSyBEyMxJQGeELlfgDcoU5VHUTqR1c8EWCs0',
+    appId: '1:952640155826:android:bd892c593737286ee199ab',
+    messagingSenderId: '952640155826',
+    projectId: 'whatsapp-clone-fda5e',
+    storageBucket: 'whatsapp-clone-fda5e.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBSDWRP0gJNvfu50pTKYfUqRDDEkQsQrUI',
-    appId: '1:867907366273:ios:6f8cdf10bb49ba7ecf0c80',
-    messagingSenderId: '867907366273',
-    projectId: 'whatsapp-backend-c4d7f',
-    storageBucket: 'whatsapp-backend-c4d7f.appspot.com',
-    iosClientId: '867907366273-j9hk7oisbdk70t3q3ri6n5qveuj30ohh.apps.googleusercontent.com',
+    apiKey: 'AIzaSyBFtiCrm7x3l0kIsUXEf3tF-mSKnbQdMDM',
+    appId: '1:952640155826:ios:4bce46b23002a30de199ab',
+    messagingSenderId: '952640155826',
+    projectId: 'whatsapp-clone-fda5e',
+    storageBucket: 'whatsapp-clone-fda5e.appspot.com',
     iosBundleId: 'com.example.whatsappUi',
   );
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyDt0LC_H6mM9GgL-ScwOzB187cogt75nhs',
+    appId: '1:952640155826:web:908f659b2eecefa1e199ab',
+    messagingSenderId: '952640155826',
+    projectId: 'whatsapp-clone-fda5e',
+    authDomain: 'whatsapp-clone-fda5e.firebaseapp.com',
+    storageBucket: 'whatsapp-clone-fda5e.appspot.com',
+    measurementId: 'G-W3PGV82FMD',
+  );
+
 }

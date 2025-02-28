@@ -13,7 +13,6 @@ Seen Message
 Replying to Messages
 Auto Scroll on New Messages
 
-
 Installation
 After cloning this repository, migrate to flutter-chat-app folder. Then, follow the following steps:
 
